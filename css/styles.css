@@ -1,0 +1,67 @@
+/* CSS Document */
+
+@import url('normalize.css');
+
+
+body{
+	font-size: 16px;
+}
+
+div{
+	font-size: 10px;
+}
+
+h2{
+	color:black;
+	font-size: 2.8em;
+}
+
+p{
+	font-size: 1.3em;
+}
+
+.main-header{
+	width: 100vw;
+	height: 20vh;
+	background-color: orange;
+}
+
+.container{
+	max-width:1200px;
+	overflow: auto;
+	border: solid 0.5px black;
+	background-color: gray;
+}
+
+.box01{
+	width: 20%;
+	float:left;
+	background-color: #FF0000;
+}
+
+.box02{
+	width: 58%;
+	margin:0% 1% 0% 1%;
+	float:left;
+	background-color: #00FF00;
+}
+
+.box03{
+	width: 20%;
+	float:left;
+	background-color: #0000FF;
+}
+
+
+/* 
+salto de flotacion, clear:both;
+
+
+/*MediaQuery*/
+
+@media (min-width: 600px){
+	/*For mobile*/
+	body{
+		font-size:16px;
+	}
+}
