@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+
+<html lang="es" dir="ltr">
+
+	<head>
+		<meta charset="utf-8">
+		<title>Validación de formularios con JS</title>
+		<script src="js/formValidator.js"></script>
+		<style>
+			.input-container {
+				margin-bottom: 10px;
+			}
+			.input-container span {
+				display: inline-block;
+				margin-top: 10px;
+			}
+			label {
+				width: 200px;
+				margin-right: 15px;
+				margin-bottom: 5px;
+			}
+			.campo {
+				border: solid 1px rgb(114, 126, 199);
+				border-radius: 5px;
+				width: 200px;
+				padding: 5px 15px;
+				outline: none;
+			}
+			.error {
+				border: solid 1px red;
+				box-shadow: 0 0 10px red;
+			}
+			.errorTxt {
+				color: tomato;
+			}
+			.hidden {
+				display: none;
+			}</style>
+	</head>
+
+	<body class="home">  <!-- form clase -->
+		<span class="title"></span>
+		<marquee>Formulario de contacto!</marquee>
+		
+		<form action="gracias.html" method="post" id="contactForm">
+			<div class="input-container">
+				<label>Nombre completo:</label>
+				<input type="text" name="fullName" class="campo">
+				<span class="errorTxt"></span>
+			</div>
+			<div class="input-container">
+				<label>Documento de Identidad:</label>
+				<input type="text" name="dni" class="campo">
+				<span class="errorTxt"></span>
+			</div>
+			<div class="input-container">
+				<label>País:</label> <br>
+				<select class="campo" name="country">
+					<option value="">Elegí</option>
+					<option value="Argentina">Argentina</option>
+					<option value="Brasil">Brasil</option>
+					<option value="Colombia">Colombia</option>
+				</select>
+				<span class="errorTxt"></span>
+			</div>
+			<div class="input-container hidden" id="cityInput">
+				<label>Ciudad:</label>
+				<input type="text" name="city" class="campo">
+				<span class="errorTxt"></span>
+			</div>
+			<div class="input-container">
+				<label>Correo electrónico:</label>
+				<input type="text" name="email" class="campo">
+				<span class="errorTxt"></span>
+			</div>
+			<div class="input-container">
+				<label>Contraseña:</label>
+				<input type="password" name="password" class="campo">
+				<button type="button" class="seePassword">ver</button>
+				<span class="errorTxt"></span>
+			</div>
+			<button type="submit" class="btn">ENVIAR</button>
+		</form>
+
+	</body>
+
+</html>
